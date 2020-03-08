@@ -7,6 +7,14 @@ constructor(array){
   this.rows = array;
 }
 
+get RowCount(){
+  return this.rows.length;
+}
+
+get columnCount(){
+  return this.header.length;
+}
+
 }
 
 module.exports = Table;

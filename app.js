@@ -9,8 +9,8 @@ async function main(){
   var processeddata = Processor.Process(dados);
 
   var users = new Table(processeddata);
-
-  console.log(users.header);
+  console.log(users.columnCount);
+  console.log(users.RowCount);
 }
 
 main();
